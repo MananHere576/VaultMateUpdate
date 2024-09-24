@@ -214,7 +214,7 @@ Object.keys(interfaces).forEach((interfaceName) => {
 });
 
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(process.env.PORT || port, "0.0.0.0", () => {
     console.log(`Server is running on port ${port}`);
     console.log(`Server is also accessible at http://${localAddress}:${port}`);
 });
