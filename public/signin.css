@@ -1,0 +1,109 @@
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.product-box {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px 3px #A87676 ;
+    height: 250px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out, transition-delay 0.1s;
+}
+.product-box :hover
+{
+    transform: scale(1.05);
+    transition-delay: 0s;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: 200px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-box a {
+    text-decoration: none;
+    color: #333;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Style for each product box */
+.group {
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.footer {
+    background-color: #585353;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+/* Add the following styles for your header and footer */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}

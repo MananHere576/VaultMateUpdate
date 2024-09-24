@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VAULT MATE</title>
+</head>
+<body>
+    <header class="header">
+        <%- include("header.ejs") %>
+    </header>
+    <h1><%= filename %></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="4.jpg" alt="Square Image">
+        </div>
+        <div class="button-row">
+            <form action='/upload/<%=filename%>' method="post" enctype="multipart/form-data">
+                <div class="file-input">
+                  <label for="image">Choose an image:</label></br>
+                  <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png, .pdf" required>
+                </div>
+                <button type="submit">Upload</button>
+              </form>
+            <a href="/image/<%=filename%>" target="_blank"><button class="green-button">Preview</button></a>
+        </div>
+    </div>
+    <br>
+    <footer class="footer">
+        <%- include("footer.ejs") %>
+    </footer>
+</body>
+</html>

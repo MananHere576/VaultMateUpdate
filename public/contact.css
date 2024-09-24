@@ -1,0 +1,50 @@
+
+.contact-containera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.884);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.contact-infoo, .social-mediac {
+    margin-bottom: 20px;
+}
+
+.social-boxa {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgb(7, 19, 2);
+    margin: 10px;
+    display: inline-block;
+    transition: transform 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+/* Hover effect */
+.social-boxa:hover {
+    transform: scale(1.05); /* Increase the size of the box on hover */
+}
+
+/* Style for social media icons/images */
+.social-boxa img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+}
+
+/* Header and h2 styles */
+h1, h2 {
+    color: #333;
+}
+
+/* Links style */
+a {
+    text-decoration: none;
+    color: #007bff;
+}

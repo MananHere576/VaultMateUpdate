@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+        }
+
+        h2 {
+            font-size: 36px; /* Larger font size */
+            margin-bottom: 20px;
+        }
+
+        #message {
+            font-size: 24px; /* Medium font size */
+            margin-bottom: 20px;
+        }
+
+        #redirectMessage {
+            font-size: 20px; /* Medium font size for the redirect message */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px; /* Smaller font size for regular text */
+        }
+
+        a {
+            color: #fff; /* White text color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="message">Image Sucessfully  Uploaded.</p>
+
+    <p id="redirectMessage">Redirecting in <span id="countdown">5</span> seconds...</p>
+
+    <script>
+        // Function to update countdown and redirect
+        function redirectWithCountdown() {
+            var countdownElement = document.getElementById('countdown');
+            var countdownValue = parseInt(countdownElement.innerText);
+
+            if (countdownValue > 1) {
+                countdownElement.innerText = countdownValue - 1;
+                setTimeout(redirectWithCountdown, 1000);
+            } else {
+                window.location.href = "/main";
+            }
+        }
+
+        // Set initial timeout for redirection
+        setTimeout(redirectWithCountdown, 1000);
+    </script>
+
+    <p>If you are not redirected, you can go back to the <a href="/main">Home page</a> manually.</p>
+</body>
+</html>

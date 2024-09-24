@@ -1,0 +1,116 @@
+.form-group {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0; /* Remove padding to reduce space between inputs */
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #071a07; /* Green color */
+}
+
+/* Style for input fields and select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #0c043e;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Style for the submit button */
+.form-group button[type="submit"] {
+    background-color: #008000; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+.clear {
+    clear: both;
+}
+.form-container {
+    display: flexbox;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 20px; */
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px  #CA8790;
+    max-width: 500px;
+}
+
+.form-container h1{
+    color: #cf5d79;
+}
+.form-group {
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 40;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-entry {
+    padding: 0; /* Remove padding to reduce space between input and label */
+}
+
+/* Style for labels */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black; /* Green color */
+}
+
+/* Style for input fields and select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #0c043e;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Style for the submit button */
+.form-group button[type="submit"] {
+    background-color: #008000; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    /* padding: 12px 20px; */
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}   
+
+.form-group button[type="submit"]:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+h1
+{
+    color: #0c330c;
+}

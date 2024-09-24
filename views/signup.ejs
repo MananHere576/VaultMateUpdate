@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>VAULT MATE</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#">
+                <img class="logo-image" src="2.png" alt="Vault Mate Logo">
+                <span class="site-title">VAULT MATE</span>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="form-container">
+        <h1><center >Registration Form</center></h1>
+        <form method="post" action="/signup">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <div class="form-entry">
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <div class="form-entry">
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="form-entry">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <div class="form-entry">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="form-entry">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <div class="form-entry">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <footer class="footer">
+        <%- include("footer.ejs") %>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+</html>

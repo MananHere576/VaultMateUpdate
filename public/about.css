@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.step-icon {
+    margin-right: 16px;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #00AA00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.step-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.step-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

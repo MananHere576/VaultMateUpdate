@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../public/" -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>VAULT MATE</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#">
+                <img class="logo-image" src="2.png" alt="Vault Mate Logo">
+                <span class="site-title">VAULT MATE</span>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section-container">
+            <h1 class="section-title">Login to your account</h1>
+            <h2 class="section-subtitle">Login using Social accounts</h2>
+            <div class="fa-container">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            <br>
+            <h2 class="section-subtitle">OR</h2>
+            <div class="form-container">
+                <form action="/signin" method="post">
+                    <input type="number" class="form-input" placeholder="Mobile Number" name="mobile" required>
+                    <input type="password" class="form-input" name="password" placeholder="password" required>
+                    <br>
+                    <div class="button-container">
+                   
+                        <button type="reset" class="form-button">Reset</button>
+                        <button type="submit" class="form-button">Sign In</button>
+                        
+                    </div>
+                </form>                
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="text-container">
+                <center><h1 class="section-title">New Here?</h1></center>
+                <center><p>Sign Up and discover new opportunities here</p></center>
+                <br>
+                <center><img src="1.png" alt="Image Description" class="circular-image"></center>
+            </div>
+            <br>
+            <center><a class="form-button" href="/signup">Sign Up</a></center>
+            <br>
+        </div> 
+    </div>
+    <br>
+    <footer class="footer">
+        <%- include("footer.ejs") %>
+    </footer>
+    <script src="signin.js"></script>
+</body>
+</html>

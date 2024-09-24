@@ -1,0 +1,271 @@
+/* Reset some deault styles */
+body, h1, h2, h3, p, a, ul, li, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1ACAC;
+    /* color: #fff; */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: #585353;
+    color: #fff;
+    padding: 8px;
+}
+
+.logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  
+}
+
+.logo-image {
+    width: 50px; /* Specify the desired size */
+    height: 50px; /* Specify the desired size */
+    border-radius: 50%; /* Create a round shape */
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #264606;
+    font-weight: bold; /* Bold text on hover */
+    text-decoration: none; /* Underline text on hover */
+    background-color: #FEFAF6; /* Change background color on hover */
+    border-radius: 5px; /* Add a rounded border on hover */
+    padding: 5px 10px; /* Increase padding on hover */
+    transition: color 0.3s, background-color 0.3s, font-weight 0.3s;
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 21px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Set the width to 60% of the screen */
+    margin: 10 auto; /* Center the section horizontally */
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+p {
+    color: black;
+}
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    padding: 10px;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #0b2a4b; /* Set the color for the icons */
+    margin-right: 10px; /* Add some spacing between the icons */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 5px #e7c7c7 ;
+    text-decoration: none;
+}
+
+/* .form-container input[type="text"], */
+.form-container input {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #0c043e;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+/* .form-container input[type="text"]:hover, */
+.form-container input:hover {
+    border-color: #393057; /* Change border color on hover */
+    transform: translateY(-5px); /* Move the input element up on hover */
+    transition: transform 0.2s ease; /* Add a smooth transition */
+}
+
+
+.form-container, .section-container {
+    height: 500px; /* Set the desired height for both containers */
+    padding: 20px;
+    border: 1px solid #330779;
+    margin: 10px;
+    text-align: center; /* Center the content horizontally */
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eaf035;
+    border-radius: 5px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    background-color: #c0516e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Set the display to inline-block */
+    margin-right: 10px; /* Add some margin to separate the buttons */
+    text-decoration: none;
+}
+.button-container {
+    text-decoration: none;
+    padding-top: 20px;
+    display: flex;
+    gap: 15px; /* Adjust the gap as needed */
+}
+.form-button:hover {
+    background-color: #BB8493;
+}
+.circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+} 
+.fa-container {
+    display: flex;
+    font-size: 23px;
+    padding: 10px; /* Increase the padding to create more space between icons */
+    justify-content: left; /* Center the logos horizontally within the container */
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 80px; /* Increase the font size for larger logos */
+    width: 60px; /* Increase the width to make the circle */
+    height: 60px; /* Set the height to match the width to create a circle */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; /* Create a round circle */
+    margin: 0 10px; /* Add horizontal margin to create spacing between logos */
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.footer {
+    background-color: #585353;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

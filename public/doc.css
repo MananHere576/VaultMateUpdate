@@ -1,0 +1,52 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 3px #A87676; /* Green color shadow with increased Y-offset */
+    max-width: 500px;
+    margin: 20px auto; /* Add top margin of 20px to move it down */
+}
+
+
+.box {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #008000; /* Green border */
+    border-radius: 10px;
+}
+.file-input{
+    color: black;
+}
+.box img {
+    width:400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.button-row button{
+    color: black;
+}
+
+.green-button {
+    padding: 10px 20px;
+    background-color: #008000; /* Green button background color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Add margin to create space between buttons */
+}
+.green-button:hover {
+    background-color: #006400; /* Darker green on hover */
+}

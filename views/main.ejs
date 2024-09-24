@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VAULT MATE</title>
+</head>
+<body>
+    <header class="header">
+        <%- include("header.ejs") %>
+    </header>
+    <center><font size="64" color="black">WELCOME!!</font></center>
+    <center><p>Your Documents, our priority; Explore storage options today.</p></center>
+    <center><div class="product-container">
+        <div class="product-box">
+            <a href="/aadhar">
+                <div class="product-image">
+                    <img src="a1.png" loading="lazy">
+                </div>
+                <div class="product-title">AADHAR CARD</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/pancard">
+                <div class="product-image">
+                    <img src="a22.jpg" loading="lazy">
+                </div>
+                <div class="product-title">PAN CARD</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/passport">
+                <div class="product-image">
+                    <img src="a3.jpg" loading="lazy">
+                </div>
+                <div class="product-title">PASSPORT</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/drivinglicence">
+                <div class="product-image">
+                    <img src="a4.webp" loading="lazy">
+                </div>
+                <div class="product-title">DRIVING LICENSE</div>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="product-container">
+        <div class="product-box">
+            <a href="/highschoolmarsheet">
+                <div class="product-image">
+                    <img src="a5.jpg" loading="lazy">
+                </div>
+                <div class="product-title">10TH MARKSHEET</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/inter">
+                <div class="product-image">
+                    <img src="a6.jpg" loading="lazy">
+                </div>
+                <div class="product-title">12TH MARKSHEET</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/abc">
+                <div class="product-image">
+                    <img src="a7.jpg" loading="lazy">
+                </div>
+                <div class="product-title">ABC ID</div>
+            </a>
+        </div>
+        <div class="product-box">
+            <a href="/others">
+                <div class="product-image">
+                    <img src="a8.webp" loading="lazy">
+                </div>
+                <div class="product-title">OTHER DOCUMENTS/IMAGES</div>
+            </a>
+        </div>
+    </div></center><br>
+    <footer class="footer">
+        <%- include("footer.ejs") %>
+    </footer>
+</body>
+</html>
